@@ -97,43 +97,9 @@ io.on("connection",(socket)=>{
     })
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-app.use(express.static(path.resolve(__dirname,"public")))
+app.use(express.static(path.resolve("")))
 app.get('/',(req,res)=>{
-    res.sendFile("/public/index.html",(err)=>{
+    res.sendFile("index.html",(err)=>{
         console.log(err);
     })
 })
